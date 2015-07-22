@@ -24,14 +24,14 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
 
-import com.example.plugin.ShellUtils.ShellCallback;
-import com.example.plugin.FFMPEGWrapper;
+import com.ffmpeg.commandline.ShellUtils.ShellCallback;
+import com.ffmpeg.commandline.FFMPEGWrapper;
 
 import android.os.Environment;
 import android.content.Context;
 import android.util.Log;
 
-public class FFMPGEGCommandline extends CordovaPlugin {
+public class FFMPEGCommandline extends CordovaPlugin {
 
     private CallbackContext cbContext = null;
 

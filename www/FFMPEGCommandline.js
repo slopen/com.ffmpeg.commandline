@@ -2,6 +2,6 @@
 
 module.exports = {
     runFFMPEG: function (command, successCallback, errorCallback) {
-        cordova.exec(successCallback, errorCallback, "FFMPGEGCommandline", "run", command);
+        cordova.exec(successCallback, errorCallback, "FFMPEGCommandline", "run", command || []);
     }
 };

@@ -3,7 +3,7 @@
         id="com.ffmpeg.commandline"
         version="0.7.0">
 
-  <name>FFMPEGCommandline</name>
+  <name>FFMPEG Commandline Plugin</name>
 
   <engines>
     <engine name="cordova" version=">=3.4.0"/>
@@ -11,22 +11,22 @@
 
   <asset src="www/FFMPEGCommandline.js" target="js/FFMPEGCommandline.js"/>
 
-  <js-module src="www/hello.js" name="hello">
-    <clobbers target="hello" />
+  <js-module src="www/FFMPEGCommandline.js" name="hello">
+    <clobbers target="FFMPEGCommandline" />
   </js-module>
 
   <platform name="android">
 
     <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="Hello">
+      <feature name="FFMPEGCommandline">
         <param name="android-package" value="com.ffmpeg.commandline.FFMPEGCommandline"/>
       </feature>
     </config-file>
 
-    <source-file src="src/android/FFMPEGCommandline.java" target-dir="src/com/example/plugin/"/>
-    <source-file src="src/android/ShellUtils.java" target-dir="src/com/example/plugin/"/>
-    <source-file src="src/android/FFMPEGWrapper.java" target-dir="src/com/example/plugin/"/>
-    <source-file src="src/android/BinaryInstaller.java" target-dir="src/com/example/plugin/"/>
+    <source-file src="src/android/FFMPEGCommandline.java" target-dir="src/com/ffmpeg/commandline/"/>
+    <source-file src="src/android/ShellUtils.java" target-dir="src/com/ffmpeg/commandline"/>
+    <source-file src="src/android/FFMPEGWrapper.java" target-dir="src/com/ffmpeg/commandline"/>
+    <source-file src="src/android/BinaryInstaller.java" target-dir="src/com/ffmpeg/commandline"/>
     <resource-file src="res/raw/ffmpeg" target="res/raw/ffmpeg" />
   </platform>
 

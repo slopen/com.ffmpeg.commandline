@@ -19,8 +19,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
 
-import com.example.plugin.ShellUtils.ShellCallback;
-import com.example.plugin.BinaryInstaller;
+import com.ffmpeg.commandline.ShellUtils.ShellCallback;
+import com.ffmpeg.commandline.BinaryInstaller;
 
 import android.content.Context;
 import android.util.Log;
